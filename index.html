@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Mark Miller">
+  <title>Can I Keep My Wife?</title>
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="app">
+  <header class="l-header">
+    <div class="logo"></div>
+    <h1 class="site-name">Can I Keep My Wife?</h1>
+  </header>
+
+  <main class="l-main" v-cloak>
+    <div class="l-left">
+      <h1 class="question-title"><span class="spouse-{{spouse | lowercase}}">{{spouse}}</span>: Question #{{count}}</h1>
+      <div class="question">{{question}} {{{questionOptions}}}</div>
+    </div>
+
+    <div class="l-right">
+
+      <div class="team clearfix" v-for="team in teams">
+        <div class="score">{{team.score}}</div>
+        <div class="name">{{team.name}}</div>
+        <div class="counter">
+          <a class="btn-plus ir" @click="updateScore($index, 'up')">+</a>
+          <a class="btn-minus ir" @click="updateScore($index)">-</a>
+          <input name="number" type="text" value="" v-model="team.newScore"/>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="l-footer">
+    <a class="btn-next ir" @click="getQuestion">Next</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/vue.resource/0.7.0/vue-resource.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
