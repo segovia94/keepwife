@@ -8,17 +8,17 @@
     <main class="l-main" role="main">
       <section v-cloak>
         <div class="l-left">
-<!--          <TheQuestion />-->
+          <TheQuestion />
         </div>
 
         <div class="l-right">
-<!--          <TheScore-->
-<!--            v-for="team in teams"-->
-<!--            :team="team"-->
-<!--            :index="$index"-->
-<!--            :key="$index"-->
-<!--          >-->
-<!--          </TheScore>-->
+          <TheScore
+            v-for="(team, id) in teams"
+            :team="team"
+            :id="id"
+            :key="id"
+          >
+          </TheScore>
         </div>
       </section>
     </main>
@@ -41,44 +41,15 @@ export default {
     TheScore
   },
 
-  data () {
-    return {
-      teams: []
-    }
-  },
-
   computed: {
-    gameId () {
-      return this.$store.game.id
+    teams () {
+      return this.$store.state.teams
     }
-  },
-
-  mounted () {
-    // Import the starting teams with initial scores
-    this.getTeams()
   },
 
   methods: {
-    getTeams () {
-      // this.$http.get('http://keepwife.d8/node/' + this.gameId + '?_format=json').then(function (response) {
-      //   var data = response.data;
-      //
-      //   // Loop through the 3 teams
-      //   for (var i = 0; i < 3; i++) {
-      //     var name = 'field_team_' + (i + 1) + '_name';
-      //     var score = 'field_team_' + (i + 1) + '_score';
-      //
-      //     this.teams.$set(i, {
-      //       name: data[name][0].value,
-      //       score: data[score][0].value
-      //     });
-      //   }
-      // });
-    },
-
     nextQuestion () {
-      // Inform the question component that the next question has been clicked
-      // this.$broadcast('next-question');
+      this.$store.dispatch('getQuestion')
     }
   }
 }

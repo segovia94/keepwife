@@ -5,61 +5,37 @@
     <div class="counter">
       <a class="btn-plus ir" @click="plusScore">+</a>
       <a class="btn-minus ir" @click="minusScore">-</a>
-      <input :name="`number-${index}`" type="text" value="" v-model="team.newScore"/>
+      <input type="text" v-model="newScore"/>
     </div>
   </div>
 </template>
 
 <script>
-  const forceInt = (value) => {
-    return parseInt(value) || 0;
-  }
-
   export default {
-    props: [
-      'index',
-      'team'
-    ],
+    props: {
+      id: {
+        type: Number,
+        required: true
+      },
+      team: {
+        type: Object,
+        required: true
+      },
+    },
 
     data () {
       return {
-        teamScore: 0,
-      }
-    },
-
-    computed: {
-      gameId () {
-        return this.$store.game.id
+        newScore: null,
       }
     },
 
     methods: {
       plusScore: function () {
-        this.teamScore = forceInt(this.team.score) + forceInt(this.team.newScore);
-
-        // Update Drupal
-        this.updateScore();
+        this.$store.commit('plusScore', {id: this.id, score: this.newScore})
       },
 
       minusScore: function () {
-        this.teamScore = forceInt(this.team.score) - forceInt(this.team.newScore);
-
-        // Update Drupal
-        this.updateScore();
-      },
-
-      updateScore: function () {
-        const data = {
-          'type': [{'target_id': 'game'}]
-        };
-        data['field_team_' + (this.index + 1) + '_score'] = [{'value': this.team.score}];
-
-        // Clear the textbox
-        this.team.newScore = '';
-
-        // Send the score
-        // this.$http.patch('http://keepwife.d8/node/' + this.gameId, data, function () {},
-        //   {headers: {'X-CSRF-Token': this.authToken}});
+        this.$store.commit('minusScore', {id: this.id, score: this.newScore})
       }
     }
   };
@@ -70,9 +46,11 @@
     text-align: right;
     margin-bottom: 50px;
   }
+
   .name {
     font-weight: bold;
   }
+
   a.btn-minus,
   a.btn-plus {
     background: url('~@/assets/images/btn-counter.png') no-repeat 0 0;
@@ -93,6 +71,7 @@
     width: 30px;
     float: right;
   }
+
   .score {
     color: #000;
     float: right;
