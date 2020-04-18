@@ -1,0 +1,59 @@
+/* Common CSS Styles across site */
+
+@font-face {
+  font-family: 'DeadKansasRegular';
+  src: url('~@/assets/fonts/dead_kansas-webfont.eot');
+  src: url('~@/assets/fonts/dead_kansas-webfont.eot?#iefix') format('embedded-opentype'),
+  url('~@/assets/fonts/dead_kansas-webfont.woff') format('woff'),
+  url('~@/assets/fonts/dead_kansas-webfont.ttf') format('truetype'),
+  url('~@/assets/fonts/dead_kansas-webfont.svg#DeadKansasRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+-----------------------------------------------------------------------------
+Headings
+-----------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DeadKansasRegular';
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+h1 {
+  color: #000;
+  text-shadow: 2px 2px 3px #AECCAD;
+}
+
+
+/*
+-----------------------------------------------------------------------------
+Links
+-----------------------------------------------------------------------------*/
+a {
+  color: #000099;
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+/*
+-----------------------------------------------------------------------------
+Layout
+-----------------------------------------------------------------------------*/
+body {
+  background: url('~@/assets/images/bg-body.jpg') no-repeat center 0;
+  background-size: cover;
+  color: #fff;
+  font-size: 35px;
+}
+
+.l-container {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  text-shadow: 2px 2px 3px #000;
+}
