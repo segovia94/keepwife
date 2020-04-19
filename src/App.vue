@@ -23,33 +23,33 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex'
-  import TheHeader from './components/TheHeader'
-  import TheQuestion from './components/TheQuestion'
-  import TheTeam from './components/TheTeam'
+import { mapState } from 'vuex'
+import TheHeader from './components/TheHeader'
+import TheQuestion from './components/TheQuestion'
+import TheTeam from './components/TheTeam'
 
-  export default {
-    name: 'App',
+export default {
+  name: 'App',
 
-    components: {
-      TheHeader,
-      TheQuestion,
-      TheTeam
-    },
+  components: {
+    TheHeader,
+    TheQuestion,
+    TheTeam
+  },
 
-    computed: {
-      ...mapState(['teams'])
-    },
+  computed: {
+    ...mapState(['teams'])
+  },
 
-    methods: {
-      nextQuestion () {
-        this.$store.dispatch('getQuestion')
-      }
+  methods: {
+    nextQuestion () {
+      this.$store.dispatch('getQuestion')
     }
   }
+}
 </script>
 
-<style lang="scss">
+<style>
   .l-main {
     margin: 2.5rem var(--container-space) 0 var(--container-space);
   }

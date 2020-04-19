@@ -11,35 +11,35 @@
 </template>
 
 <script>
-  import { mapMutations } from 'vuex'
+import { mapMutations } from 'vuex'
 
-  export default {
-    name: 'TheScore',
+export default {
+  name: 'TheScore',
 
-    props: {
-      id: {
-        type: Number,
-        required: true
-      },
-      team: {
-        type: Object,
-        required: true
-      },
+  props: {
+    id: {
+      type: Number,
+      required: true
     },
-
-    data () {
-      return {
-        score: null,
-      }
-    },
-
-    methods: {
-      ...mapMutations(['plusScore', 'minusScore'])
+    team: {
+      type: Object,
+      required: true
     }
+  },
+
+  data () {
+    return {
+      score: null
+    }
+  },
+
+  methods: {
+    ...mapMutations(['plusScore', 'minusScore'])
   }
+}
 </script>
 
-<style lang="scss">
+<style>
   .team {
     display: grid;
     grid-template-columns: 1fr min-content;

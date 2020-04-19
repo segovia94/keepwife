@@ -54,25 +54,23 @@ export default new Vuex.Store({
         // Switch the spouse.
         if (state.spouse === 'Husbands') {
           state.spouse = 'Wives'
-        }
-        else {
+        } else {
           state.spouse = 'Husbands'
           // increment the round since the husbands started
           state.round++
         }
-      }
-      else {
+      } else {
         state.questionCount++
       }
     },
 
     plusScore (state, payload) {
-      state.teams[payload.id]['score'] = state.teams[payload.id]['score'] + forceInt(payload.score)
+      state.teams[payload.id].score = state.teams[payload.id].score + forceInt(payload.score)
     },
 
     minusScore (state, payload) {
-      state.teams[payload.id]['score'] = state.teams[payload.id]['score'] - forceInt(payload.score)
-    },
+      state.teams[payload.id].score = state.teams[payload.id].score - forceInt(payload.score)
+    }
   },
 
   actions: {
@@ -85,7 +83,7 @@ export default new Vuex.Store({
         questions = questionsHusbands
       }
 
-      //TODO: prevent the reuse of questions.
+      // TODO: prevent the reuse of questions.
 
       // Get a random question
       const question = randomProperty(questions)

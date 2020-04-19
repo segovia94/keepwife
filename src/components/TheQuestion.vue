@@ -11,27 +11,27 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex'
+import { mapState } from 'vuex'
 
-  export default {
-    name: 'TheQuestion',
+export default {
+  name: 'TheQuestion',
 
-    computed: {
-      spouseClass () {
-        return `spouse-${this.spouse.toLowerCase()}`
-      },
-
-      ...mapState({
-        question: state => state.currentQuestion.question,
-        options: state => state.currentQuestion.options,
-        spouse: state => state.currentQuestion.spouse,
-        count: 'questionCount'
-      })
+  computed: {
+    spouseClass () {
+      return `spouse-${this.spouse.toLowerCase()}`
     },
+
+    ...mapState({
+      question: state => state.currentQuestion.question,
+      options: state => state.currentQuestion.options,
+      spouse: state => state.currentQuestion.spouse,
+      count: 'questionCount'
+    })
   }
+}
 </script>
 
-<style lang="scss">
+<style>
   .question__title {
     font-size: 1.5rem;
   }

@@ -8,12 +8,12 @@
 </template>
 
 <script>
-  export default {
+export default {
 
-  }
+}
 </script>
 
-<style lang="scss">
+<style>
   .header {
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 2px 2px #2b2b2b;
