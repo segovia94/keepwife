@@ -6,9 +6,9 @@ import questionsWives from './questions-wives.json'
 
 Vue.use(Vuex)
 
-const randomProperty = (obj) => {
+const randomKey = (obj) => {
   const keys = Object.keys(obj)
-  return obj[keys[keys.length * Math.random() << 0]]
+  return keys[keys.length * Math.random() << 0]
 }
 
 const forceInt = (value) => {
@@ -33,7 +33,10 @@ export default new Vuex.Store({
     ],
     round: 1,
     roundLength: 5,
+    totalRounds: 2,
     spouse: 'Husbands',
+    questionsHusbands: questionsHusbands,
+    questionsWives: questionsWives,
     questionCount: 0,
     currentQuestion: {
       question: null,
@@ -45,6 +48,14 @@ export default new Vuex.Store({
   mutations: {
     nextQuestion (state, payload) {
       state.currentQuestion = payload
+    },
+
+    removeQuestion (state, payload) {
+      if (payload.spouse === 'Husbands') {
+        delete state.questionsHusbands[payload.id]
+      } else {
+        delete state.questionsWives[payload.id]
+      }
     },
 
     roundProgression (state) {
@@ -74,21 +85,23 @@ export default new Vuex.Store({
   },
 
   actions: {
-    getQuestion (context) {
-      // Advance the rounds
+    nextQuestion (context) {
+      // Advance the rounds.
       context.commit('roundProgression')
 
-      let questions = questionsWives
-      if (context.state.spouse === 'Husbands') {
-        questions = questionsHusbands
+      const { spouse } = context.state
+
+      let questions = context.state.questionsWives
+      if (spouse === 'Husbands') {
+        questions = context.state.questionsHusbands
       }
 
-      // TODO: prevent the reuse of questions.
+      // Get a random question.
+      const id = randomKey(questions)
+      context.commit('nextQuestion', questions[id])
 
-      // Get a random question
-      const question = randomProperty(questions)
-
-      context.commit('nextQuestion', question)
+      // Prevent the reuse of the question.
+      context.commit('removeQuestion', { id, spouse })
     }
   },
 

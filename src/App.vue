@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import TheHeader from './components/TheHeader'
 import TheQuestion from './components/TheQuestion'
 import TheTeam from './components/TheTeam'
@@ -42,9 +42,7 @@ export default {
   },
 
   methods: {
-    nextQuestion () {
-      this.$store.dispatch('getQuestion')
-    }
+    ...mapActions(['nextQuestion'])
   }
 }
 </script>
