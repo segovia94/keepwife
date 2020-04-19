@@ -7,30 +7,30 @@ import questionsWives from './questions-wives.json'
 Vue.use(Vuex)
 
 const randomProperty = (obj) => {
-  const keys = Object.keys(obj);
-  return obj[keys[ keys.length * Math.random() << 0]];
-};
+  const keys = Object.keys(obj)
+  return obj[keys[keys.length * Math.random() << 0]]
+}
 
 const forceInt = (value) => {
-  return parseInt(value) || 0;
+  return parseInt(value) || 0
 }
 
 export default new Vuex.Store({
   state: {
-    teams: {
-      1: {
-        name: 'first',
+    teams: [
+      {
+        name: 'Team 1',
         score: 0
       },
-      2: {
-        name: 'second',
+      {
+        name: 'Team 2',
         score: 0
       },
-      3: {
-        name: 'third',
+      {
+        name: 'Team 3',
         score: 0
       }
-    },
+    ],
     round: 1,
     roundLength: 5,
     spouse: 'Husbands',
@@ -47,29 +47,31 @@ export default new Vuex.Store({
       state.currentQuestion = payload
     },
 
-    roundProgression(state) {
+    roundProgression (state) {
       if (state.questionCount >= state.roundLength) {
-        state.questionCount = 1;
+        state.questionCount = 1
 
         // Switch the spouse.
         if (state.spouse === 'Husbands') {
-          state.spouse = 'Wives';
-        } else {
-          state.spouse = 'Husbands';
+          state.spouse = 'Wives'
+        }
+        else {
+          state.spouse = 'Husbands'
           // increment the round since the husbands started
           state.round++
         }
-      } else {
-        state.questionCount++;
+      }
+      else {
+        state.questionCount++
       }
     },
 
     plusScore (state, payload) {
-      state.teams[payload.id]['score'] = state.teams[payload.id]['score'] + forceInt(payload.score);
+      state.teams[payload.id]['score'] = state.teams[payload.id]['score'] + forceInt(payload.score)
     },
 
     minusScore (state, payload) {
-      state.teams[payload.id]['score'] = state.teams[payload.id]['score'] - forceInt(payload.score);
+      state.teams[payload.id]['score'] = state.teams[payload.id]['score'] - forceInt(payload.score)
     },
   },
 
@@ -92,6 +94,5 @@ export default new Vuex.Store({
     }
   },
 
-  modules: {
-  }
+  modules: {}
 })

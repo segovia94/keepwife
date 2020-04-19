@@ -1,5 +1,18 @@
 /* Common CSS Styles across site */
 
+:root {
+  --stroke-color: #226528;
+  --stroke-color--invert: rgba(255, 255, 255, .25);
+  --font-title: 'DeadKansasRegular';
+  --container-space: 1rem;
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --container-space: 3rem;
+  }
+}
+
 @font-face {
   font-family: 'DeadKansasRegular';
   src: url('~@/assets/fonts/dead_kansas-webfont.eot');
@@ -11,6 +24,38 @@
   font-style: normal;
 }
 
+html {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  box-sizing: border-box;
+  background: url('~@/assets/images/bg-body.jpg') no-repeat center 0;
+  background-size: cover;
+  min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #fff;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* For image replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
 /*
 -----------------------------------------------------------------------------
 Headings
@@ -20,20 +65,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin-bottom: 1em;
 }
+
 h1 {
   color: #000;
-  text-shadow: 2px 2px 3px #AECCAD;
 }
-
 
 /*
 -----------------------------------------------------------------------------
 Links
 -----------------------------------------------------------------------------*/
 a {
-  color: #000099;
+  color: #009;
   text-decoration: none;
 }
+
 a:hover, a:active {
   text-decoration: underline;
 }
@@ -42,13 +87,6 @@ a:hover, a:active {
 -----------------------------------------------------------------------------
 Layout
 -----------------------------------------------------------------------------*/
-body {
-  background: url('~@/assets/images/bg-body.jpg') no-repeat center 0;
-  background-size: cover;
-  color: #fff;
-  font-size: 35px;
-}
-
 .l-container {
   width: 100%;
   text-align: left;
@@ -56,4 +94,20 @@ body {
   padding: 0;
   position: relative;
   text-shadow: 2px 2px 3px #000;
+}
+
+.stroke {
+  text-shadow:
+    -1px -1px 0 var(--stroke-color),
+    1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color),
+    1px 1px 0 var(--stroke-color);
+}
+
+.stroke-white {
+  text-shadow:
+    -1px -1px 0 var(--stroke-color--invert),
+    1px -1px 0 var(--stroke-color--invert),
+    -1px 1px 0 var(--stroke-color--invert),
+    1px 1px 0 var(--stroke-color--invert);
 }

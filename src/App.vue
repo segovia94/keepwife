@@ -1,25 +1,18 @@
 <template>
   <div id="app">
-    <header class="l-header" role="banner">
-      <div class="logo"></div>
-      <h1 class="site-name">Can I Keep My Wife?</h1>
-    </header>
+    <TheHeader/>
 
-    <main class="l-main" role="main">
-      <section v-cloak>
-        <div class="l-left">
-          <TheQuestion />
-        </div>
-
-        <div class="l-right">
-          <TheScore
-            v-for="(team, id) in teams"
-            :team="team"
-            :id="id"
-            :key="id"
-          >
-          </TheScore>
-        </div>
+    <main class="l-main">
+      <section>
+        <TheQuestion/>
+      </section>
+      <section class="l-team">
+        <TheTeam
+          v-for="(team, id) in teams"
+          :team="team"
+          :id="id"
+          :key="id"
+        />
       </section>
     </main>
 
@@ -30,83 +23,63 @@
 </template>
 
 <script>
-import TheQuestion from './components/TheQuestion'
-import TheScore from './components/TheScore'
+  import { mapState } from 'vuex'
+  import TheHeader from './components/TheHeader'
+  import TheQuestion from './components/TheQuestion'
+  import TheTeam from './components/TheTeam'
 
-export default {
-  name: 'App',
+  export default {
+    name: 'App',
 
-  components: {
-    TheQuestion,
-    TheScore
-  },
+    components: {
+      TheHeader,
+      TheQuestion,
+      TheTeam
+    },
 
-  computed: {
-    teams () {
-      return this.$store.state.teams
-    }
-  },
+    computed: {
+      ...mapState(['teams'])
+    },
 
-  methods: {
-    nextQuestion () {
-      this.$store.dispatch('getQuestion')
+    methods: {
+      nextQuestion () {
+        this.$store.dispatch('getQuestion')
+      }
     }
   }
-}
 </script>
 
 <style lang="scss">
-  [v-cloak] {
-    display: none;
-  }
-  .logo {
-    background-image: url('~@/assets/images/green-card-tilted.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    float: left;
-    margin: -20px 0 0 20px;
-    position: relative;
-    width: 210px;
-    height: 170px;
-  }
-  .site-name {
-    color: #ffffff;
-    font-size: 65px;
-    padding: 20px 0 0 260px;
-    text-shadow: 2px 2px 4px #000000;
-  }
-  .l-header {
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 2px 2px #2B2B2B;
-    height: 120px;
-    margin: 25px 0 40px 0;
-  }
   .l-main {
-    margin: 60px 70px 0 70px;
+    margin: 2.5rem var(--container-space) 0 var(--container-space);
   }
-  .l-right {
-    float: right;
-    width: 330px;
+
+  @media (min-width: 600px) {
+    .l-main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 2rem;
+    }
   }
-  .l-left {
-    float: left;
-    width: 530px;
+
+  .l-team {
+    display: inline-block;
   }
+
   .l-footer {
+    position: fixed;
+    bottom: 0;
+    right: var(--container-space);
     text-align: right;
-    clear: both;
-    width: 100%;
-    height: 108px;
   }
+
   .btn-next {
     background: url('~@/assets/images/btn-next.png') no-repeat 0 0;
     height: 108px;
     width: 106px;
-    position: absolute;
-    bottom: 0;
-    right: 70px;
     cursor: pointer;
   }
+
   .btn-next:hover {
     background-position: 0 -108px;
   }

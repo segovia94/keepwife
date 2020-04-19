@@ -1,0 +1,531 @@
+{
+  "1": {
+    "spouse": "Wives",
+    "question": "What color tie would your husband like to receive?"
+  },
+  "2": {
+    "spouse": "Wives",
+    "question": "How many times did you date before your first kiss with your husband?"
+  },
+  "3": {
+    "spouse": "Wives",
+    "question": "What bill does your husband complain about most?",
+    "options": [
+      "gas",
+      "electric",
+      "food",
+      "clothing",
+      "telephone"
+    ]
+  },
+  "4": {
+    "spouse": "Wives",
+    "question": "What comic character does your husband most resemble?",
+    "options": [
+      "Batman",
+      "Daffy Duck",
+      "Charlie Brown"
+    ]
+  },
+  "5": {
+    "spouse": "Wives",
+    "question": "If your husband were Superman, what feat would he best perform?"
+  },
+  "6": {
+    "spouse": "Wives",
+    "question": "If your husband had a night out \"with the boys\" where would they go?"
+  },
+  "7": {
+    "spouse": "Wives",
+    "question": "If your husband came home with two dozen roses, would you say?",
+    "options": [
+      "he had lunch with a blonde",
+      "received a raise",
+      "it was an expression of his affection"
+    ]
+  },
+  "8": {
+    "spouse": "Wives",
+    "question": "Who caught the bouquet at your wedding?"
+  },
+  "9": {
+    "spouse": "Wives",
+    "question": "If you asked your husband to cook dinner one evening, what dish would he prepare?"
+  },
+  "10": {
+    "spouse": "Wives",
+    "question": "Complete this sentence, \"I wish my husband would stop..."
+  },
+  "11": {
+    "spouse": "Wives",
+    "question": "My husband's first kiss was like a..."
+  },
+  "12": {
+    "spouse": "Wives",
+    "question": "What advice would your husband offer if his best friend were to announce marriage plans?"
+  },
+  "13": {
+    "spouse": "Wives",
+    "question": "What sound does your husband imitate best?"
+  },
+  "14": {
+    "spouse": "Wives",
+    "question": "How much cash does your husband have on him right now?"
+  },
+  "15": {
+    "spouse": "Wives",
+    "question": "What size shoes does your husband wear?"
+  },
+  "16": {
+    "spouse": "Wives",
+    "question": "What was the last thing your husband said he would buy you, and did he?"
+  },
+  "17": {
+    "spouse": "Wives",
+    "question": "What is your husband's favorite midnight snack?"
+  },
+  "18": {
+    "spouse": "Wives",
+    "question": "Which wedding gift did your husband dislike the most?"
+  },
+  "19": {
+    "spouse": "Wives",
+    "question": "What was the year of your husband's first car?"
+  },
+  "20": {
+    "spouse": "Wives",
+    "question": "Does your husband carry a picture of you in his wallet?"
+  },
+  "21": {
+    "spouse": "Wives",
+    "question": "Who is your husband's favorite singer/band?"
+  },
+  "22": {
+    "spouse": "Wives",
+    "question": "What movie star will your husband say he is most like?",
+    "options": [
+      "Jack Nicholson",
+      "Brad Pitt",
+      "Tom Cruise",
+      "Jim Carrey"
+    ]
+  },
+  "23": {
+    "spouse": "Wives",
+    "question": "What will your husband say is the last little thing that he had fun helping you do?"
+  },
+  "24": {
+    "spouse": "Wives",
+    "question": "What will your husband say regarding the last kiss you gave him today? Will he say it was?",
+    "options": [
+      "ho hum",
+      "so so",
+      "ooh la la"
+    ]
+  },
+  "25": {
+    "spouse": "Wives",
+    "question": "Who will your husband say is the most intelligent person he knows? First and last name."
+  },
+  "26": {
+    "spouse": "Wives",
+    "question": "What will your husband say is the one specific item of food he can't stand to see you bring home from the market?"
+  },
+  "27": {
+    "spouse": "Wives",
+    "question": "What will your husband say is your mother's most annoying habit?"
+  },
+  "28": {
+    "spouse": "Wives",
+    "question": "What will your husband say is the cost of the dress that you are wearing right now?"
+  },
+  "29": {
+    "spouse": "Wives",
+    "question": "How will your husband complete this sentence: \"The one relative of my wife's family that bugs me the most is..."
+  },
+  "30": {
+    "spouse": "Wives",
+    "question": "Who will your husband say is most appealing to members of the opposite sex?",
+    "options": [
+      "you",
+      "himself"
+    ]
+  },
+  "31": {
+    "spouse": "Wives",
+    "question": "How will your husband complete this sentence: \"My wife is a natural born...\"(what?)"
+  },
+  "32": {
+    "spouse": "Wives",
+    "question": "If you and your husband were moving, which of your personal possessions will your husband say he would most like to see you leave behind?"
+  },
+  "33": {
+    "spouse": "Wives",
+    "question": "What specific words of advice will your husband say he would most like to give a new bridegroom just before he walked down the aisle?"
+  },
+  "34": {
+    "spouse": "Wives",
+    "question": "Will your husband say he would be more upset if he lost?",
+    "options": [
+      "his hair",
+      "his job"
+    ]
+  },
+  "35": {
+    "spouse": "Wives",
+    "question": "What will your husband say is the size of your television screen?"
+  },
+  "36": {
+    "spouse": "Wives",
+    "question": "What, specifically, will your husband say was his very first job?"
+  },
+  "37": {
+    "spouse": "Wives",
+    "question": "Which movie actress will your husband say you most resemble?"
+  },
+  "38": {
+    "spouse": "Wives",
+    "question": "How will your husband say he likes his steak cooked?"
+  },
+  "39": {
+    "spouse": "Wives",
+    "question": "What will your husband say was the date the two of you were married? (Month, day, and year)"
+  },
+  "40": {
+    "spouse": "Wives",
+    "question": "Being very specific, what will your husband say was the very last thing he lost?"
+  },
+  "41": {
+    "spouse": "Wives",
+    "question": "Which will your husband say he is ruled by?",
+    "options": [
+      "his heart",
+      "his mind",
+      "his stomach"
+    ]
+  },
+  "42": {
+    "spouse": "Wives",
+    "question": "At what age will your husband say he fell in love with a girl for the first time?"
+  },
+  "43": {
+    "spouse": "Wives",
+    "question": "How will your husband say he likes his coffee?"
+  },
+  "44": {
+    "spouse": "Wives",
+    "question": "Other than you, what will your husband say was the name of the very first person he told of his definite plans to marry you? (Give that person's first and last name)."
+  },
+  "45": {
+    "spouse": "Wives",
+    "question": "What comic strip character will your husband say reminds him of you?"
+  },
+  "46": {
+    "spouse": "Wives",
+    "question": "What will your husband say is his least favorite piece of furniture in your house?"
+  },
+  "47": {
+    "spouse": "Wives",
+    "question": "Which of the following will your husband say best describes his general attitude toward your suggestions?",
+    "options": [
+      "sounds great",
+      "we'll see...",
+      "no chance"
+    ]
+  },
+  "48": {
+    "spouse": "Wives",
+    "question": "Will your husband say he would rather have?",
+    "options": [
+      "money",
+      "beauty",
+      "brains"
+    ]
+  },
+  "49": {
+    "spouse": "Wives",
+    "question": "What will your husband say was the last thing he fixed?"
+  },
+  "50": {
+    "spouse": "Wives",
+    "question": "If your husband were born a woman, which word will he say would best describe his personality?",
+    "options": [
+      "princess",
+      "prissy",
+      "perky"
+    ]
+  },
+  "51": {
+    "spouse": "Wives",
+    "question": "What is your spouse's favorite vehicle?"
+  },
+  "52": {
+    "spouse": "Wives",
+    "question": "What is your husband most likely to be doing on a Sunday afternoon?"
+  },
+  "53": {
+    "spouse": "Wives",
+    "question": "What is your husband's favorite quote?"
+  },
+  "54": {
+    "spouse": "Wives",
+    "question": "Who do you think is smarter or has the higher IQ - your husband or you?"
+  },
+  "55": {
+    "spouse": "Wives",
+    "question": "Who drives the worst? Your husband or you?"
+  },
+  "56": {
+    "spouse": "Husbands",
+    "question": "Who proposed marriage first, you or your wife?"
+  },
+  "57": {
+    "spouse": "Husbands",
+    "question": "What animal does your mother-in-law remind you of?"
+  },
+  "58": {
+    "spouse": "Husbands",
+    "question": "Where did you first kiss your wife?"
+  },
+  "59": {
+    "spouse": "Husbands",
+    "question": "What color dress did your wife wear on your first date?"
+  },
+  "60": {
+    "spouse": "Husbands",
+    "question": "What item of clothing would you like to see your wife eliminate from her wardrobe? (item and color)"
+  },
+  "61": {
+    "spouse": "Husbands",
+    "question": "What color are your wife's eyes?"
+  },
+  "62": {
+    "spouse": "Husbands",
+    "question": "Where will your wife say she had the best vacation with you?"
+  },
+  "63": {
+    "spouse": "Husbands",
+    "question": "What flower best describes your wife in the morning when she first gets up?",
+    "options": [
+      "Sunflower",
+      "Bird of Paradise",
+      "Snap Dragon"
+    ]
+  },
+  "64": {
+    "spouse": "Husbands",
+    "question": "Which one of your habits would your wife like to break?"
+  },
+  "65": {
+    "spouse": "Husbands",
+    "question": "Who caught the garter at your wedding?"
+  },
+  "66": {
+    "spouse": "Husbands",
+    "question": "Where did you first meet your wife?"
+  },
+  "67": {
+    "spouse": "Husbands",
+    "question": "What traffic sign best describes your wife on a bad day?"
+  },
+  "68": {
+    "spouse": "Husbands",
+    "question": "Before I was married I always used to ________, but now I ________."
+  },
+  "69": {
+    "spouse": "Husbands",
+    "question": "What television show did you and your wife watch together last?"
+  },
+  "70": {
+    "spouse": "Husbands",
+    "question": "What size ring does your wife wear?"
+  },
+  "71": {
+    "spouse": "Husbands",
+    "question": "Name your wife's last two boy friends."
+  },
+  "72": {
+    "spouse": "Husbands",
+    "question": "What is your wife's pet name for you?"
+  },
+  "73": {
+    "spouse": "Husbands",
+    "question": "What did your wife pay for the most expensive dress she has bought since you have been married?"
+  },
+  "74": {
+    "spouse": "Husbands",
+    "question": "How long will your wife say she can go without a mirror?"
+  },
+  "75": {
+    "spouse": "Husbands",
+    "question": "At what specific sport or game will your wife say she is definitely better than you?"
+  },
+  "76": {
+    "spouse": "Husbands",
+    "question": "Using one descriptive word that begins with the first initial of your last name, how will your wife describe you on your first date together?"
+  },
+  "77": {
+    "spouse": "Husbands",
+    "question": "What word does your wife use most often when she is upset?"
+  },
+  "78": {
+    "spouse": "Husbands",
+    "question": "If you gave your wife $10, what would she buy?"
+  },
+  "79": {
+    "spouse": "Husbands",
+    "question": "How many pairs of shoes does your wife own?"
+  },
+  "80": {
+    "spouse": "Husbands",
+    "question": "What color are the sheets on your bed?"
+  },
+  "81": {
+    "spouse": "Husbands",
+    "question": "What was the last item your wife bought that you did not like?"
+  },
+  "82": {
+    "spouse": "Husbands",
+    "question": "What movie star will your wife say she is most like?",
+    "options": [
+      "Meryl Streep",
+      "Elizabeth Taylor",
+      "Julia Roberts",
+      "Angelina Jolie"
+    ]
+  },
+  "83": {
+    "spouse": "Husbands",
+    "question": "If your wife had her choice, where would she most like to live?",
+    "options": [
+      "San Francisco",
+      "Paris",
+      "Rome",
+      "Rio de Janeiro"
+    ]
+  },
+  "84": {
+    "spouse": "Husbands",
+    "question": "What dance would your wife use to describe your marriage?",
+    "options": [
+      "Line Dancing",
+      "Waltz",
+      "The Twist",
+      "Lambada"
+    ]
+  },
+  "85": {
+    "spouse": "Husbands",
+    "question": "How will your wife complete this sentence? My husband has more ________ than anyone else I know."
+  },
+  "86": {
+    "spouse": "Husbands",
+    "question": "Where will your wife say was the very last place she heard you break into a song solo?"
+  },
+  "87": {
+    "spouse": "Husbands",
+    "question": "How will your wife describe you when you wake up in the morning? Will she say you are?",
+    "options": [
+      "grouchy",
+      "numb",
+      "aggressive"
+    ]
+  },
+  "88": {
+    "spouse": "Husbands",
+    "question": "What would your wife tell people her exact dress size is?"
+  },
+  "89": {
+    "spouse": "Husbands",
+    "question": "In two words, how will your wife describe her exact feeling after your honeymoon?"
+  },
+  "90": {
+    "spouse": "Husbands",
+    "question": "On a one to ten scale, where will your wife rate your overall impact on women if ten is James Bond himself?"
+  },
+  "91": {
+    "spouse": "Husbands",
+    "question": "What will your wife say is the one home appliance the two of you need the most?"
+  },
+  "92": {
+    "spouse": "Husbands",
+    "question": "What will your wife say is the very first gift she gave you?"
+  },
+  "93": {
+    "spouse": "Husbands",
+    "question": "Where, specifically, will your wife say the two of you went on your very first date together?"
+  },
+  "94": {
+    "spouse": "Husbands",
+    "question": "What will your wife say is the single most unusual thing she has in her purse?"
+  },
+  "95": {
+    "spouse": "Husbands",
+    "question": "How will your wife complete this sentence: \"My husband always puts his foot in his mouth when he starts talking about...\" (what?)"
+  },
+  "96": {
+    "spouse": "Husbands",
+    "question": "What is the title of your wife's favorite record album/CD?"
+  },
+  "97": {
+    "spouse": "Husbands",
+    "question": "What is your wife's favorite kind of cake?"
+  },
+  "98": {
+    "spouse": "Husbands",
+    "question": "If mattel modeled a doll after your wife, what phrase will she admit is most likely to come out of her mouth when you pull the string on her back?"
+  },
+  "99": {
+    "spouse": "Husbands",
+    "question": "In order of easiest to hardest, what could your wife give up cold turkey for one entire month?",
+    "options": [
+      "coffee",
+      "television",
+      "chocolate"
+    ]
+  },
+  "100": {
+    "spouse": "Husbands",
+    "question": "Will your wife say that total strangers are more surprised that she married you or that you married her?"
+  },
+  "101": {
+    "spouse": "Husbands",
+    "question": "How much will your wife say her brain weighs in ounces?"
+  },
+  "102": {
+    "spouse": "Husbands",
+    "question": "What secret will your wife say that you, personally, have learned most recently about all women?"
+  },
+  "103": {
+    "spouse": "Husbands",
+    "question": "Besides the bathroom, what is the one thing your wife wishes the two if you didn't share?"
+  },
+  "104": {
+    "spouse": "Husbands",
+    "question": "What was the last thing you did that made her give you the evil eye?"
+  },
+  "105": {
+    "spouse": "Husbands",
+    "question": "What is your wife's all-time favorite movie?"
+  },
+  "106": {
+    "spouse": "Husbands",
+    "question": "What is the first activity or thing that your wife does when she wakes up in the morning?"
+  },
+  "107": {
+    "spouse": "Husbands",
+    "question": "What qualities does your wife like or admire the most about you?"
+  },
+  "108": {
+    "spouse": "Husbands",
+    "question": "What habit of your wife's irritates you the most?"
+  },
+  "109": {
+    "spouse": "Husbands",
+    "question": "What is your wife most scared of?"
+  },
+  "110": {
+    "spouse": "Husbands",
+    "question": "Who wears the pants in your family?"
+  }
+}
